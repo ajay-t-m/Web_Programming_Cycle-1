@@ -1,0 +1,40 @@
+<!-- JS Positive or Negative
+	Ajay T M
+	23mca007
+	Date: 01/11/2023-->
+<html>
+<head>
+<title>Program 4</title>
+<style>
+h1{
+	color:green;
+	text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<br><br><br>
+<center>
+<h1>Check if Positive or Negative</h1>
+
+<label>Enter the  Number: <input id="x"></label><br><br>
+<button onclick="check()">Check</button>
+<p id="op"></p>
+</center>
+
+<script>
+function check(){
+var x = document.getElementById("x").value;
+if(parseInt(x)>0){
+    document.getElementById("op").innerHTML="the number is positive"
+    }
+else if (parseInt(x)==0){
+    document.getElementById("op").innerHTML="the number is zero"
+    }
+else{
+    document.getElementById("op").innerHTML="the number is negative"
+}
+}
+</script>
+</body>
+</html>
