@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Form</title>
+
+</head>
+<body>
+<br><br><br>
+
+<h2>Form</h2>
+<form action='insertion.php' method='POST' name="formVal"  onsubmit="return validate()">
+<label>Name:</label>
+ <input type="text" name="name" id=""><br>
+
+<label>Course:</label>
+ <input type="text" name="course" id=""><br>
+
+<label>Age:</label>
+ <input type="number" name="age" id=""><br><br>
+
+<input type="submit">
+
+</form>
+
+ 
+  <script>
+        function validate(){
+            let name = document.formVal.name.value;
+            let course = document.formVal.course.value;
+            let age = document.formVal.age.value;
+
+            if (name === '' || course === '' || age === '') {
+                alert("Please enter all fields!")
+                return false
+            }
+
+        }
+    </script>
+	
+</body>
+</html>
